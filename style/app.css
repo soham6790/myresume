@@ -1,0 +1,161 @@
+element {
+    --headerheight: 4em;
+}
+
+body {
+    background-image: url("/media/images/antelope_canyon.jpg");
+    background-color: aliceblue;
+    border: 0;
+    min-height: 100%;
+    font-family: 'CustomFont', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+
+}
+
+h1 {
+font-size: 4em;
+text-align: center;
+}
+
+@media screen and (max-width: 800px){
+    h1 {
+        font-size: 3em;
+        color: green;
+    }
+}
+
+@media screen and (max-width: 600px){
+    h1 {
+        font-size: 2em;
+        color: brown;
+    }
+}
+
+@media screen and (max-width: 400px){
+    h1 {
+        font-size: 1.5em;
+        color: blue;
+    }
+}
+
+h3 {
+    background-color: #84a98c
+}
+   
+header {
+    background-color: #84a98c;
+    width: 100%;
+    height: 4em;
+    /* border: 5px solid black; */
+    display: block;
+    /* position: fixed; */
+    /* top:0; */
+}
+
+footer {
+    background-color: #111d13;
+    width: 100%;
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    border: 10px solid #111d13;
+}
+
+
+header nav {
+    background-color: #84a98c;
+    width: 80%;
+    /* height: 3rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    float: right;
+    /* position: absolute; */
+    margin: 0 auto;
+}
+
+header nav a {
+    background: none;
+    background-color: #81b29a;
+    color:#22223b;
+    border: thick double #22223b;
+    border-radius: 15%;
+    padding: 1em 2em;
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+@media screen and (max-width: 800px) {
+    header nav a {
+      float: none;
+      width: 80%;
+      padding: .5em 1em;
+    }
+}
+
+header nav a:hover,header nav a:focus {
+    /* background-color: #fefae0;
+    border-radius: 40%;
+    transition: all 0.1s ease-in; */
+    border-color: #d9ed92;
+    background-color: #10451d;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #d9ed92;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+.sidebar {
+    /* height: auto; */
+    /* max-height: calc(100vh - var(--headerheight)); */
+    width: 17%;
+    position: absolute;
+    /* float: left; */
+    display: block;
+    justify-content: left;
+    background-color: #a98467;
+    border: black;
+}
+
+main {
+    width: 80%;
+    display: block;
+    position: relative;
+    left: 18%;
+}
+
+/*Images and Videos*/
+#profileimage {
+    /* height: 240px; */
+    /* width: 140px; */
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;
+}
+
+/*Footer*/
+.copyright {
+    color: white;
+}
+
+.referencelinks a img:hover {
+    transform: scale(1.2);
+    transition: all 0.1s ease-in;
+}
+thead {
+	background-color: #333;
+	color: white;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: normal;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e2eafc;
+}
+  
+  tbody tr:nth-child(even) {
+    background-color: #e2ece9;
+}
