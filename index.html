@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Home</title>
     <link rel="stylesheet" href="style/app.css">
+    <script src="script/showAnimals.js" defer></script>
 </head>
 
 <body>
@@ -14,15 +15,19 @@
             <a href="index.html">Home</a>
             <a href="education.html">Education</a>
             <a href="experience.html">Experience</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contactform.html">Contact Me</a>
         </nav>
     </header>
     <section class="sidebar">
-        <img id = "profileimage" src="media/images/Soham_Image_4_3.jpg" alt="An image of Soham Dutta" title="Profile Image">
+        <img id="profileimage" src="media/images/Soham_Image_4_3.jpg" alt="An image of Soham Dutta" title="Profile Image">
         <h3>Contact</h3>
         <address>
             <a href="mailto:sohamdbu.bu.edu">sohamdbu@bu.edu</a>
             <br>
-            <a href="tel:+13211231133">(321) 123-1133</a>
+            <a href="mailto:soham6790@gmail.com">soham6790@gmail.com</a>
+            <br>
+            <a href="tel:+13211231133">(111) 111-1111</a>
         </address>
         <section>
             <h3>References</h3>
@@ -30,17 +35,31 @@
     </section>
     <main>
         <h1>Soham Dutta</h1>
-        <section>
-            <h3>A bit about myself</h3>
-            <h4>Learner. Problem Solver.</h4>
+        <h3>A bit about myself</h3>
+        <section id="intro">
+            <h4>Learner. Problem Solver. Technophile</h4>
             <p>
-                Being a hard as well a smart worker with a positive attitude, I aspire to prove my skills in the fast moving and dynamic
+                Being a hard as well as a smart worker with a positive attitude, I aspire to prove my skills in the fast-moving and dynamic
                 world of IT. My goal is to work in a challenging and continuous learning environment where I can enrich myself
                 both personally and professionally keeping in practice the quality standards of the organization.
             </p>
             <p>
-                When I am not working you can find me playing soccer, painting or visting different places with my wife. I enjoy cooking
-                in spare my spare time. Recently I have started to learn playing ukulele.
+                I have about 10 years of experience working in the field of IT, mainly in the quality assurance area. Over the years I have
+                worked in multiple test automation frameworks across multiple domain and technologies for both windows and
+                web applications. I have a passion for learning new tools and technologies in the world of test automation
+                which is very dynamic just like technology itselff. Last few years I have been working mostly in web application
+                test automation. I have worked extensively on testing various order management systems in the e-commerce
+                sector in both frontend and backend space. Working with web applications for so many years has got me fascinated
+                towards the design and development of web-based applications, hence nowadays I am investing more time in
+                learning about web development
+            </p>
+            <p>
+                When I am not working you can find me playing soccer, hiking, or cooking. Another hobby of mine is visiting different places
+                of interest with my wife. We have visited different places in and around the New England area over the last
+                few years. We took a trip to the south west last year and was blown away by its rugged beauty. I still can't
+                forget the feeling of seeing the grand canyon for the first time. Check out some of the pictures from my
+                trip in my gallery section. I enjoy cooking in spare my spare time. Recently I have started learning to play
+                the ukulele.
             </p>
         </section>
         <section>
@@ -56,8 +75,22 @@
                     <source src="media/vedio/Bryce_Preview.mp4" type="video/mp4"> Sorry, your browser doesn't support embedded videos.
                 </video>
                 <video controls width="220" title="Zion Canyon overlook preview">
-                        <source src="media/vedio/Zion_preview.mp4" type="video/mp4"> Sorry, your browser doesn't support embedded videos.
+                    <source src="media/vedio/Zion_preview.mp4" type="video/mp4"> Sorry, your browser doesn't support embedded videos.
                 </video>
+                <a id="gallerylink" href="gallery.html">Click here for more..</a>
+            </div>
+        </section>
+        <section id="animalfinder">
+            <h3>Fun Corner</h3>
+            <div id="btn-container">
+                <p>Click here to view interesting animals:
+                <button id="shownext" class="button" type="button">Show More</button>
+                <button id="clearButton" class="button" type="button">Clear</button>
+                </p>
+            </div>
+            <div id="error">
+            </div>
+            <div id="target">
             </div>
         </section>
     </main>
@@ -74,9 +107,9 @@
             </a>
         </div>
         <div class="copyright">
-        <p>
-            Copyright © 2022 Soham Dutta.All Right Reserved
-        </p>
+            <p>
+                Copyright © 2022 Soham Dutta.All Rights Reserved.
+            </p>
         </div>
     </footer>
 </body>

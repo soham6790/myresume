@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="style/app.css">
+    <script src="script/contact.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contactform.html">Contact Me</a>
+        </nav>
+    </header>
+    <section class="sidebar">
+        <img id="profileimage" src="media/images/Soham_Image_4_3.jpg" alt="An image of Soham Dutta" title="Profile Image">
+        <h3>Contact</h3>
+        <address>
+            <a href="mailto:sohamdbu.bu.edu">sohamdbu@bu.edu</a>
+            <br>
+            <a href="mailto:soham6790@gmail.com">soham6790@gmail.com</a>
+            <br>
+            <a href="tel:+13211231133">(111) 111-1111</a>
+        </address>
+        <section>
+            <h3>References</h3>
+        </section>
+    </section>
+    <main>
+        <h1>Soham Dutta</h1>
+        <h3>Contact Me</h3>
+        <section id="contactForm">
+            <form id="myform" name="my-form" action="https://bucs601.com/submit.php" method="post">
+                <fieldset id="details">
+                    <legend>Enter details:</legend>
+                    <div>
+                    <span>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="John" required>
+                    </span>
+                    <span>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Doe" required>
+                    </span>
+                    <span>
+                        <label for="email"> Email Address:</label>
+                        <input type="email" id="email" placeholder="joe@domain.com" required>
+                    </span>
+                    </div>
+                    <div>
+                    <span>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="111-111-1111">
+                    </span>
+                    <span>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" value="1990-07-22">
+                    </span>
+                    </div>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" rows=5 cols=33 placeholder="Enter details here.."></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Choose your favorite computer language:</legend>
+                    <input type="radio" id="Java" name="language">
+                    <label for="Java">Java</label>
+                    <br/>
+                    <input type="radio" id="JavaScript" name="language">
+                    <label for="JavaScript">JavaScript</label>
+                    <br/>
+                    <input type="radio" id="Python" name="language">
+                    <label for="C++">C++</label>
+                    <br/>
+                    <input type="radio" id="C" name="language">
+                    <label for="C">C</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Choose your favorite IDEs:</legend>
+                    <input type="checkbox" id="intellij" name="intellij">
+                    <label for="intellij">IntelliJ</label>
+                    <br/>
+                    <input type="checkbox" id="eclipse" name="eclipse">
+                    <label for="eclipse">Eclipse</label>
+                    <br/>
+                    <input type="checkbox" id="vscode" name="vscode">
+                    <label for="vscode">VSCode</label>
+                    <br/>
+                    <input type="checkbox" id="webstrom" name="webstrom">
+                    <label for="webstrom">WebStorm</label>
+                </fieldset>
+                <div id="errorMsg">
+                </div>
+                <div id="submitbtn-container">
+                    <input id="submitbtn" type="submit" value="submit">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="referencelinks">
+            <a target="_blank" href="https://www.facebook.com/soham.rivu/">
+                <img src="media/images/fbImage.png" alt="link to facebook profile" title="facebook profile">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/sohamdutta6790/">
+                <img src="media/images/linkedIn.png" alt="link to linkedin profile" title="linkedin profile">
+            </a>
+            <a target="_blank" href="https://github.com/soham6790">
+                <img src="media/images/github.png" alt="link to github profile" title="github profile">
+            </a>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright © 2022 Soham Dutta.All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

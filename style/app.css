@@ -4,7 +4,7 @@ element {
 
 body {
     background-image: url("/media/images/antelope_canyon.jpg");
-    background-color: aliceblue;
+    background-color:grey;
     border: 0;
     min-height: 100%;
     font-family: 'CustomFont', Arial, sans-serif;
@@ -15,8 +15,36 @@ body {
 
 h1 {
 font-size: 4em;
+color: white;
 text-align: center;
 }
+
+#highlights ul,#intro, #animalfinder {
+    background-color: #e2eafc;
+}
+
+#contactForm div {
+    margin: 1em;
+}
+
+#contactForm fieldset {
+    font-weight: bold;
+    color: #011627;
+}
+
+#errorMsg {
+    color: #e5383b;
+    font-weight: bold;
+}
+
+#gallerylink {
+    color: #e2eafc;
+}
+
+div#target {
+    padding: 1em;
+}
+
 
 @media screen and (max-width: 800px){
     h1 {
@@ -44,7 +72,7 @@ h3 {
 }
    
 header {
-    background-color: #84a98c;
+    /* background-color: #84a98c; */
     width: 100%;
     height: 4em;
     /* border: 5px solid black; */
@@ -64,7 +92,7 @@ footer {
 
 
 header nav {
-    background-color: #84a98c;
+    /* background-color: #84a98c; */
     width: 80%;
     /* height: 3rem; */
     display: flex;
@@ -134,6 +162,61 @@ main {
     height: 100%; 
     object-fit: contain;
 }
+
+#gallery {
+    line-height:0;
+    -webkit-column-count:5; /* split it into 5 columns */
+    -webkit-column-gap:5px; /* give it a 5px gap between columns */
+    -moz-column-count:5;
+    -moz-column-gap:5px;
+    column-count:5;
+    column-gap:5px;
+ }
+
+ #gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom:5px; /* to match column gap */
+    transition: filter 2s;
+ }
+
+ #gallery img:hover {
+    box-shadow: 5px 4px 10px #e2eafc;
+    transform: scale(1.15);
+  }
+
+ /*1200px reduce the columns to 4*/
+ @media (max-width: 1200px) { 
+    #gallery {
+     -moz-column-count:    4;
+     -webkit-column-count: 4;
+     column-count:         4;
+    }
+ }
+ /*1000px reduce the columns to 3*/
+ @media (max-width: 1000px) {
+    #gallery {
+     -moz-column-count:    3;
+     -webkit-column-count: 3;
+     column-count:         3;
+    }
+ }
+/*800px reduce the columns to 2*/
+ @media (max-width: 800px) {
+    #gallery {
+     -moz-column-count:    2;
+     -webkit-column-count: 2;
+     column-count:         2;
+    }
+ }
+/*400px reduce the columns to 1*/
+ @media (max-width: 400px) {
+    #gallery {
+     -moz-column-count:    1;
+     -webkit-column-count: 1;
+     column-count:         1;
+    }
+ }
 
 /*Footer*/
 .copyright {
