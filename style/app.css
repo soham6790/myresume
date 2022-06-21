@@ -50,6 +50,37 @@ div#target {
     padding: 1em;
 }
 
+#clearButton, #shownext {
+    
+    background-color: #4CAF50; 
+    border: 1px solid black;
+    border-radius: 5%;
+    color: white;
+    margin: 1%;
+    padding: 1% 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#shownext:hover,
+#clearButton:hover {
+  background-color: green;
+  border-radius: 10%;
+}
+
+#todosection {
+    color: #e2eafc;
+}
+
+#todosection h3 {
+    color: black;
+}
+
+#todosection button:hover {
+    background-color: rgb(187, 32, 32);
+}
+
 
 @media screen and (max-width: 800px){
     h1 {
