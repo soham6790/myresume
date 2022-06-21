@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Education</title>
     <link rel="stylesheet" href="style/app.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="script/education.js" type="module"></script>
 </head>
 
 <body>
@@ -99,14 +101,15 @@
                 </tbody>
             </table>
         </section>
-        <section id="hobbies">
-            <h3>Hobbies</h3>
-            <ol>
-                <li>Soccer</li>
-                <li>Painting</li>
-                <li>Cooking</li>
-                <li>Travelling</li>
-            </ol>
+        <section>
+            <div id="hobbyTitle">
+                <h3 v-bind:title="message">{{title}}</h3>
+            </div>
+            <div id="hobbies">
+                <ol>
+                    <li v-for="el in hobbyList">{{el.name}}</li>
+                </ol>
+            </div>
         </section>
     </main>
     <footer>
