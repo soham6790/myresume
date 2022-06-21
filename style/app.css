@@ -41,6 +41,11 @@ text-align: center;
     color: #e2eafc;
 }
 
+#hobbies ol {
+    color: #e2eafc;
+
+}
+
 div#target {
     padding: 1em;
 }
@@ -101,6 +106,17 @@ header nav {
     float: right;
     /* position: absolute; */
     margin: 0 auto;
+}
+
+
+#contactForm fieldset {
+    color: white;
+
+}
+
+#contactForm legend {
+    background-color: #84a98c;
+
 }
 
 header nav a {
