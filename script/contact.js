@@ -40,4 +40,21 @@ function validate() {
         errorMsg.innerHTML = errorMsg.innerHTML + "<p>" + m + "<p>";
     }
 
+    // get the form element from dom
+    const formElement = document.getElementById("myform")
+
+    // function to convert the form to JSON
+    const getFormJSON = (form) => {
+        const data = new FormData(form);
+        return Array.from(data.keys()).reduce((result, key) => {
+            result[key] = data.get(key);
+            return result;
+        }, {});
+    };
+
+    //display the Json in console.
+    const result = getFormJSON(formElement);
+    console.log(result);
+
+
 }
